@@ -1,0 +1,36 @@
+print("Enter Boolean values (0=False, 1=True)")
+A = bool(int(input("Enter A: ")))
+B = bool(int(input("Enter B: ")))
+C = bool(int(input("Enter C: ")))
+lhs = A and (B or C)
+rhs = (A and B) or (A and C)
+print("LHS = A AND (B OR C) =", lhs)
+print("RHS = (A AND B) OR (A AND C) =", rhs)
+if lhs == rhs:
+    print("Result: LHS = RHS")
+    print("Distributive law is verified")
+else:
+    print("Distributive law is not verified")
+lhs = A or (B and C)
+rhs = (A or B) and (A or C)
+print("LHS = A OR (B AND C) =", lhs)
+print("RHS = (A OR B) AND (A OR C) =", rhs)
+if lhs == rhs:
+    print("Result: LHS = RHS")
+    print("Distributive law is verified")
+else:
+    print("Distributive law is not verified")
+print("Enter arithmetic values")
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+lhs = a * (b + c)
+rhs = (a * b) + (a * c)
+print("LHS = a * (b + c) =", lhs)
+print("RHS = (a * b) + (a * c) =", rhs)
+if lhs == rhs:
+    print("Result: LHS = RHS")
+    print("Distributive law is verified")
+else:
+    print("Distributive law is not verified")
+print("Program completed successfully")
